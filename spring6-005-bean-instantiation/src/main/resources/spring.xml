@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--通过构造方法实例化-->
+    <bean id="userBean" class="com.jsf.spring6.bean.User"/>
+
+    <!--通过简单工厂实例化-->
+    <bean id="vipBean" class="com.jsf.spring6.bean.VipFactory" factory-method="get"/>
+
+    <!--通过工厂方法实例化-->
+    <bean id="orderFactory" class="com.jsf.spring6.bean.OrderFactory"/>
+    <bean id="orderBean" factory-bean="orderFactory" factory-method="get"/>
+
+    <!--通过FactoryBean接口实例化-->
+    <bean id="personBean" class="com.jsf.spring6.bean.PersonFactory"/>
+
+    <!--。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。-->
+    <bean id="dateBean" class="com.jsf.spring6.bean.DateFactoryBean">
+        <constructor-arg name="date" value="1999-9-9"/>
+    </bean>
+    <bean id="stuBean" class="com.jsf.spring6.bean.Student">
+        <property name="birth" ref="dateBean"/>
+    </bean>
+</beans>

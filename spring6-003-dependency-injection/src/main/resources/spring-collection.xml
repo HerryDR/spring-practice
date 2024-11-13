@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="peopleBean" class="com.jsf.spring6.bean.People">
+        <property name="names">
+            <list>
+                <value>甲</value>
+                <value>乙</value>
+                <value>丙</value>
+            </list>
+        </property>
+        <property name="phones">
+            <set>
+                <value>110</value>
+                <value>120</value>
+                <value>119</value>
+            </set>
+        </property>
+        <property name="sons">
+            <map>
+                <entry key="1" value="儿1"/>
+                <entry key="2" value="儿2"/>
+                <entry key="3" value="儿3"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/spring</prop>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

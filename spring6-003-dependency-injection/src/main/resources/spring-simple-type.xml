@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userBean" class="com.jsf.spring6.bean.User">
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean id="simpleValueTypeBean" class="com.jsf.spring6.bean.SimpleValueType">
+        <property name="age" value="20"/>
+        <property name="age2" value="21"/>
+        <property name="flag" value="true"/>
+        <property name="flag2" value="false"/>
+        <property name="c" value="a"/>
+        <property name="c2" value="b"/>
+        <property name="season" value="SPRING"/>
+        <property name="username" value="啊"/>
+        <property name="clazz" value="java.lang.String"/>
+
+    </bean>
+    <bean id="myDataSourceBean" class="com.jsf.spring6.jdbc.MyDataSource">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+</beans>

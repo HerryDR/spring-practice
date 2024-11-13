@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="csDaoBean" class="com.jsf.spring6.dao.CsDao"/>
+
+    <!--<bean id="csServiceBean" class="com.jsf.spring6.service.CsService">
+        <constructor-arg index="0" ref="csDaoBean"></constructor-arg>
+    </bean>-->
+    <!--<bean id="csServiceBean" class="com.jsf.spring6.service.CsService">
+        <constructor-arg name="csDao" ref="csDaoBean"></constructor-arg>
+    </bean>-->
+    <bean id="csServiceBean" class="com.jsf.spring6.service.CsService">
+        <constructor-arg ref="csDaoBean"/>
+    </bean>
+
+</beans>

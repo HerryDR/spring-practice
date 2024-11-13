@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--注入null-->
+    <!--<bean id="userBean" class="com.jsf.spring6.bean.User">
+        <property name="email">
+            <null/>
+        </property>
+    </bean>-->
+    <!--注入空串-->
+    <bean id="userBean" class="com.jsf.spring6.bean.User">
+        <property name="email">
+            <value/>
+        </property>
+    </bean>
+
+</beans>

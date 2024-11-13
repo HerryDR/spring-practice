@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="personBean" class="com.jsf.spring6.bean.Person">
+        <property name="favoriteFoods">
+            <array>
+                <value>米饭</value>
+                <value>面条</value>
+                <value>饺子</value>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="userBean1" class="com.jsf.spring6.bean.User">
+        <property name="age" value="20"/>
+    </bean>
+    <bean id="userBean2" class="com.jsf.spring6.bean.User">
+        <property name="age" value="30"/>
+    </bean>
+    <bean id="userBean3" class="com.jsf.spring6.bean.User">
+        <property name="age" value="40"/>
+    </bean>
+    <bean id="homeBean" class="com.jsf.spring6.bean.Home">
+        <property name="users">
+            <array>
+                <ref bean="userBean1"/>
+                <ref bean="userBean2"/>
+                <ref bean="userBean3"/>
+            </array>
+        </property>
+    </bean>
+</beans>

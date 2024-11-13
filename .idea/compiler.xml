@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring6-006-lifecycle" />
+        <module name="simple-factory" />
+        <module name="spring6-002-first" />
+        <module name="spring6-012-aop-realapp" />
+        <module name="spring6-005-bean-instantiation" />
+        <module name="spring6-004-scope" />
+        <module name="review-annotation" />
+        <module name="factory-method" />
+        <module name="myspring-test" />
+        <module name="spring6-003-dependency-injection" />
+        <module name="myspring" />
+        <module name="spring6-008-ioc-annotation" />
+        <module name="spring6-016-sm" />
+        <module name="spring6-013-tx-bank" />
+        <module name="spring6-007-jdbc" />
+        <module name="spring6-001-revelation" />
+        <module name="static-proxy" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
